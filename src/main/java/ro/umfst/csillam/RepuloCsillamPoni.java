@@ -21,6 +21,8 @@ class RepuloCsillamPoni extends CsillamPoni
     {
         return szarnySzin;
     }
+    
+    //its getNev() not nev
  @Override
  public String bemutatkozas() 
  {
