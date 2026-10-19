@@ -13,8 +13,10 @@ public class Main
     public static void main(String[] args) 
     {
         CsillamPoni p = new RepuloCsillamPoni("CsillamKapitan", 7, "lila");
+        CsillamPoni p1 = new CsillamPoni("Poni1", 5);
         p.adjCsillamot(3);
         System.out.println(p.bemutatkozas());
+        System.out.println(p1.bemutatkozas());
     }
  
 }

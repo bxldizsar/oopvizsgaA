@@ -23,9 +23,10 @@ class RepuloCsillamPoni extends CsillamPoni
     }
     
     //its getNev() not nev
+    //4.getcsillampont + szarnyszin. 
  @Override
  public String bemutatkozas() 
  {
-    return "Repulo poni: " + getNev();
+    return getNev() + ": " + getCsillamPont() + ", szárny szine: " + szarnySzin;
  }
 }
