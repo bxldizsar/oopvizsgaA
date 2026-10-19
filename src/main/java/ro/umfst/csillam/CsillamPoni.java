@@ -18,10 +18,20 @@ public class CsillamPoni
     //this.nev is the correct one 
     this.nev = nev;
     this.csillamPont = csillamPont;
+    
+    if(csillamPont < 0)
+    {
+        throw new IllegalArgumentException("A csillampont nem lehet negativ:" + csillamPont);
+    }
  }
     public void adjCsillamot(int mennyiseg) 
  {
+     if(mennyiseg < 0)
+    {
+        throw new IllegalArgumentException("Az adjCsillamot nem lehet negativ:" + mennyiseg);
+    }
     csillamPont += mennyiseg;
+   
  }
     public int getCsillamPont() 
  {
